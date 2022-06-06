@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #301a57;
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 50px;
+}
+
+body {
+  font-family: "Audiowide", cursive;
+  background-color: #261444;
+  color: #eeeeee;
+}
+
+h1,
+h2,
+h3 {
+  color: #24ff66;
+}
+
+.App {
+  transition: all 0.3s ease-out;
+  &.active {
+    padding-left: 20rem;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@import "./nav";
+@import "./song";
+@import "./player";
+@import "./library";
